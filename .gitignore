@@ -6,11 +6,13 @@
 */DerivedDataCache
 */Intermediate
 */Saved
-BuildingEscape/Content/StarterContent/
+BuildingEscape/Content/StarterContent/Textures
+BuildingEscape/Content/StarterContent/HDRI
 *_BuiltData.uasset
 
 ######################
 # VS Generated Files #
 ######################
 */.vs
+*/.suo
 
