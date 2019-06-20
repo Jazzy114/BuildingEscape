@@ -3,6 +3,8 @@
 
 #include "OpenDoor.h"
 
+#define OUT
+
 // Sets default values for this component's properties
 UOpenDoor::UOpenDoor()
 {
@@ -57,7 +59,8 @@ float UOpenDoor::GetTotalMassOfActorsOnPlate()
 	float TotalMass = 0.f;
 
 	// Find all overlapping actors
-	PressurePlate->GetOverlappingActors()
+	TArray<AActor*> OverlappingActors;
+	PressurePlate->GetOverlappingActors(OUT OverlappingActors);
 	// Iterate through them adding their masses
 
 	return TotalMass;
