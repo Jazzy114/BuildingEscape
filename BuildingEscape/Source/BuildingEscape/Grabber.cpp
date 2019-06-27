@@ -26,7 +26,7 @@ void UGrabber::FindPhysicsHandleComponent()
 	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
 	if (PhysicsHandle == nullptr)
 	{
-		UE_LOG(LogTemp, Error, TEXT("%s is missing physics handle component."), *GetOwner()->GetName())
+		UE_LOG(LogTemp, Error, TEXT("%s is missing physics handle component."), *GetOwner()->GetName());
 	}
 }
 
@@ -41,7 +41,7 @@ void UGrabber::SetupInputComponent()
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("%s is missing input component."), *GetOwner()->GetName())
+		UE_LOG(LogTemp, Error, TEXT("%s is missing input component."), *GetOwner()->GetName());
 	}
 }
 
@@ -68,7 +68,7 @@ void UGrabber::Grab()
 void UGrabber::Release()
 {
 	if (!PhysicsHandle) { return; }
-	UE_LOG(LogTemp, Warning, TEXT("Grab realeased."))
+	UE_LOG(LogTemp, Warning, TEXT("Grab realeased."));
 		PhysicsHandle->ReleaseComponent();
 }
 
